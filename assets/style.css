@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -14,32 +14,101 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding-inline: 100px;
-	padding-block: 30px;
+	
 	align-items: center;
 }
 
-.top-header .name {
-	font-size: 26px;
+header .logo {
+	height: 75px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 0;
+	gap: 50px;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
+	
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
-	color: #000
+	color: #000;
+	display: block;
+}
+
+nav a:hover{
+	color: #e5975f;
 }
 
 .social-link img {
 	width: 20px;
+}
+
+#carouselExampleIndicators{
+	position: relative;
+}
+
+.slogan-container a{
+	text-decoration: none;
+	color: white;
+}
+
+.slogan-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	color: white;
+	font-size: 2rem;
+	gap: 20px;
+}
+
+.fa-mobile-screen-button{
+	color: #bdc3c7;
+	margin-right: 20px;
+}
+
+.adresse a{
+	font-size: 0.9rem;
+	color: #bdc3c7;
+	display: flex;
+	align-items: center;
+}
+
+.telephone{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.telephone a{
+	font-size: 1.75rem;
+}
+
+.btn-contact{
+	height: 62px;
+	border-radius: 99rem;
+	/* border: solid 1px white; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9rem;
+	width: 280px;
+	background-color: #e5975f;
+}
+
+.logo-n-carducci{
+	width: 300px;
 }
 
 #about {
@@ -97,7 +166,7 @@ body {
 	text-align: center;
 	padding-block: 2em;
 }
-.gallery .nav {
+.gallery nav {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -320,15 +389,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header .nav, header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
