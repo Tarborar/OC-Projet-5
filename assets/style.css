@@ -166,6 +166,11 @@ nav a:hover{
 	text-align: center;
 	padding-block: 2em;
 }
+
+.tags-bar{
+	display: flex;
+	justify-content: center;
+}
 .gallery nav {
 	justify-content: center;
 }
@@ -175,8 +180,14 @@ nav a:hover{
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
 }
+
+.nav-pills .nav-link:hover {
+	color: #e5975f;
+	cursor: pointer;
+}
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
