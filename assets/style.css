@@ -160,7 +160,7 @@ nav a:hover{
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+	min-height: 100vh;
 }
 .title{
 	text-align: center;
@@ -179,13 +179,24 @@ nav a:hover{
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
+.nav-link.active-tag {
+	background-color: #BEB45A;
+	color: white;
+}
+
+.nav-link.active-tag:hover {
+	color: #fff; /* Couleur du texte en survol */
+	background-color: #BEB45A;
+  }
+
 .nav-pills .nav-link {
 	color: #000;
 }
 
-.nav-pills .nav-link:hover {
-	color: #e5975f;
+.nav-link:hover {
 	cursor: pointer;
+	color: #e5975f;
 }
 
 .item-column {
@@ -227,7 +238,7 @@ nav a:hover{
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: calc(1.375rem + 1.5vw);
 }
 .quote__author {
 	font-family: Spectral;
@@ -322,6 +333,30 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	
+	background-color: #1C6474;
+	padding-top: 50px;
+}
+
+.logoFooter{
+	width: 100px;
+	height: 100px;
+}
+
+.listFooter{
+	color: #A8D5D8;
+	list-style-type: none;
+	padding: 0;
+}
+
+.titreFooter{
+	color: white;
+	margin-bottom: 25px;
 }
 
 @media all and (max-width: 1180px) {
