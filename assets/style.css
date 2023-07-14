@@ -491,9 +491,7 @@ footer{
 	.btn-contact{
 		width: 90%;
 	}
-	.picture.left::before, .picture.right::before {
-		height: 150px;
-	}
+	
 	#services .container {
 		align-items: center;
 	}
